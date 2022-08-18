@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            color: #B8A233;
+        }
+        input{
+            border-radius: 0%;
+            background-color: white;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            color: #B8A233;
+            border-color: #B8A233;
+            
+        }
+        img{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <input type = "button" id = "random" value="Find out your destiny!">
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-00-the-Fool.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Beginnings, innocence, spontaneity, a free spirit</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-01-Magician.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Manifestation, resourcefulness, power, inspired action</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-02-High-Priestess.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Intuition, sacred knowledge, divine feminine, the subconscious mind</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-03-The-Empress.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Femininity, beauty, nature, nurturing, abundance</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-04-Emperor.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Authority, establishment, structure, a father figure</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/04/MA-05-the-hierophant.png" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Spiritual wisdom, religious beliefs, conformity, tradition,institutions</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-07-the-chariot.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Control, willpower, success, action, determination</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/04/ET-MA-08-strength.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Strength, courage, persuasion, influence, compassion</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-09-the-hermit.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Soul-searching, introspection, being alone, inner guidance</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-10-wheel-of-fortune.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Good luck, karma, life cycles, destiny, a turning point</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/04/MA-12-the-hanged-man.png" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Pause, surrender, letting go, new perspectives</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-13-Death.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Endings, change, transformation, transition</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-15-The-Devil.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;"> Shadow self, attachment, addiction, restriction, sexuality</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-16-The-Tower.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Sudden change, upheaval, chaos, revelation, awakening</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-17-The-Star.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Hope, faith, purpose, renewal, spirituality</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-19-The-Sun.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Positivity, fun, warmth, success, vitality</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-18-The-Moon.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Illusion, fear, anxiety, subconscious, intuition</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-20-Judgement.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Judgement, rebirth, inner calling, absolution</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-14-Temperance.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Balance, moderation, patience, purpose</p>
+
+    <img src = "https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-21-The-World.jpg" class = "card" style="display: none;">
+    <p class = "meaning" style="display: none;">Completion, integration, accomplishment, travel</p>
+    
+    
+    <script>
+                /*1.  Створіть функцію, що повертає випадкову картку з 54-х (20-ти)*/
+                function getRandomInt(min, max){
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        let randButt = document.getElementById('random');
+
+        randButt.onclick = function(){
+            let images = document.querySelectorAll('.card');
+            let mean = document.querySelectorAll('.meaning');
+            
+            let r = getRandomInt(0, 19);
+            if (images[r].style.display == "none" && mean[r].style.display == "none"){
+                images[r].style.display = "block";
+                mean[r].style.display = "block";
+            }else if(images.style.display == "block" && mean.style.display == "block"){
+                images.style.display = "none";
+                mean.style.display = "none";                
+            }
+            console.log(r);
+        }
+    </script>
+</body>
+</html>

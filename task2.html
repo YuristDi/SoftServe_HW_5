@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <input type = "text" id = "enteredLine" required></br>
+    <input type = "button" id = "calculate" value = "Розрахувати">
+    <div id = "result"></div>
+
+    <script>
+        /*2.  Написати функцію, яка приймає рядок та виводить статистику про неї: 
+        кількість літер, кількість цифр та кількість інших знаків.*/
+
+        let res = document.querySelector("#result");
+        let cal = document.getElementById('calculate');
+
+        cal.onclick = function() {
+            let lineStr = document.getElementById('enteredLine').value;
+            let lineArr = lineStr.split('');
+
+            let numCount = 0;
+            let letterCount = 0;
+            let symbolCount = 0;
+            let spaceCount = 0;
+
+            for(let i = 0; i < lineArr.length; i++){
+                if(parseInt(lineArr[i])){
+                    numCount++;
+                }else if(lineArr[i].match(/[a-z/A-Z/а-я/А-Я]/)){
+                    letterCount++;                    
+                }else if(lineArr[i] == 0){
+                    spaceCount++;
+                }else{
+                    symbolCount++;}
+            res.innerHTML = `Letters - ${letterCount}, numbers - ${numCount}, symbols - ${symbolCount}, whiteSpaces - ${spaceCount}`;
+            }
+        }
+    </script>
+</body>
+</html>

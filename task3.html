@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <input type = "text" id = "enteredLine" required></br>
+    <input type = "button" id = "changeLine" value = "Замінити">
+    <div id = "result"></div>
+
+    <script>
+        /*3.  Написати функцію, яка замінює в отриманому рядку великі літери на маленькі, 
+        малі – на великі, а цифри – на знак нижнього підкреслення*/
+
+        let res = document.querySelector("#result");
+        let changeButt = document.getElementById('changeLine');
+
+        changeButt.onclick = function() {
+            let lineStr = document.getElementById('enteredLine').value;
+            let lineArr = lineStr.split('');
+            let newLineArr = [];
+
+            for(let i = 0; i < lineArr.length; i++){
+                if(parseInt(lineArr[i])){
+                    newLineArr[i] = '_';
+                }else if(lineArr[i].match(/[a-z/а-я]/)){
+                    newLineArr[i] = lineArr[i].toUpperCase();                    
+                }else if(lineArr[i].match(/[A-Z/А-Я]/)){
+                    newLineArr[i] = lineArr[i].toLowerCase();                    
+                }
+                else{
+                    newLineArr[i] = '0';
+                }
+            res.innerHTML = `${newLineArr}`;
+            }
+        }
+    </script>
+</body>
+</html>
