@@ -21,6 +21,7 @@
             color: #B8A233;
             border-color: #B8A233;
             border-style: solid;
+            
         }
         img{
             height: 400px;
@@ -102,7 +103,7 @@
         randButt.onclick = function(){
             let images = document.querySelectorAll('.card');
             let mean = document.querySelectorAll('.meaning');
-            
+
             for(let i = 0; i < images.length; i++){
                 if (images[i].style.display == "block" && mean[i].style.display == "block"){
                     images[i].style.display = "none";
@@ -114,9 +115,6 @@
             if (images[r].style.display == "none" && mean[r].style.display == "none"){
                 images[r].style.display = "block";
                 mean[r].style.display = "block";
-            }else if(images.style.display == "block" && mean.style.display == "block"){
-                images.style.display = "none";
-                mean.style.display = "none";                
             }
             console.log(r);
         }
