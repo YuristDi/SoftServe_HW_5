@@ -103,6 +103,13 @@
             let images = document.querySelectorAll('.card');
             let mean = document.querySelectorAll('.meaning');
             
+            for(let i = 0; i < images.length; i++){
+                if (images[i].style.display == "block" && mean[i].style.display == "block"){
+                    images[i].style.display = "none";
+                    mean[i].style.display = "none";
+                }
+            }
+            
             let r = getRandomInt(0, 19);
             if (images[r].style.display == "none" && mean[r].style.display == "none"){
                 images[r].style.display = "block";
